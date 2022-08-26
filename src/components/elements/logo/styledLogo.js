@@ -30,7 +30,11 @@ export const StyledLogoWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     img {
-      width: 30px;
+      padding: 2px;
+      width: 40px;
+    }
+    .logo__name {
+      display: none;
     }
   }
 `;
