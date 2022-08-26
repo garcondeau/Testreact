@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32" height="32" version="1.1" viewBox="0 0 8.4667 8.4667" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(.19242 0 0 .18895 -.38486 -.3015)" fill="none"><path transform="matrix(1.2973 0 0 1.997 10.104 8.5166)" d="m15.472 11.245-0.089182-11.87 10.324 5.8577z" fill="#d2d79f" stroke-opacity="0"/><rect x="24.635" y="16.572" width="6.9805" height="6.8071" fill="#d2d79f" stroke-opacity="0"/><rect x="16.412" y="25.005" width="6.9256" height="6.8114" fill="#f2d79f" stroke-opacity="0"/><path transform="matrix(1.2341 0 0 1.8784 9.0413 6.7183)" d="m7.0598 4.4811 0.39713 13.721-12.082-6.5167z" fill="#f2d79f" stroke-opacity="0"/><path d="m24 16h5v-12l15 15-15 15v-10h-11v-11l-14 15 14 16v-12h5" stroke="#fffff6" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/></g></svg>
+<svg width="32" height="32" version="1.1" viewBox="0 0 8.4667 8.4667" xml:space="preserve"
+     xmlns="http://www.w3.org/2000/svg"><g transform="matrix(.19242 0 0 .18895 -.38486 -.3015)" fill="none"><path d="m24 16h5v-12l15 15-15 15v-10h-11v-11l-14 15 14 16v-12h5"
+                                                 stroke="#fffff6" stroke-linecap="round" stroke-linejoin="round"
+                                                 stroke-width="4"/></g></svg>

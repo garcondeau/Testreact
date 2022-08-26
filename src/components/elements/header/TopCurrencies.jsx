@@ -4,7 +4,6 @@ import { responseStatus } from "../../../utils/consts";
 
 const TopCurrencies = () => {
   const [result, setResult] = useState({ eur: "", usd: "", pln: "" });
-  const [fetch, setFetch] = useState(false);
 
   const fetchCurrencies = () => {
     axios.get(
@@ -34,7 +33,7 @@ const TopCurrencies = () => {
         return (
           <li key={key} className="currency">
               <span className="currency__name">
-                {value[0]}
+                {value[0]}:
               </span>
             <span className="currency__value">
                 {(1 / value[1]).toFixed(3)}

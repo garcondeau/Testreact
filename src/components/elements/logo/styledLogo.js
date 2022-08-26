@@ -4,6 +4,7 @@ export const StyledLogoWrapper = styled.div`
   height: 100%;
   color: #ffffff;
   display: flex;
+  grid-gap: 5px;
   justify-content: center;
   align-items: center;
   transition: all 0.4s ease;
@@ -21,8 +22,7 @@ export const StyledLogoWrapper = styled.div`
   }
 
   img {
-    padding: 10px;
-    width: 40px;
+    width: 45px;
     object-position: center;
     object-fit: contain;
     transition: all 0.3s ease;
@@ -30,7 +30,6 @@ export const StyledLogoWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     img {
-      padding: 2px;
       width: 40px;
     }
     .logo__name {
