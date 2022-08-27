@@ -18,7 +18,12 @@ const currencies = [
   { value: 'pln', label: 'PLN' },
 ];
 
+const regex = {
+  AMOUNT: "^[0-9]{1,10}([,.][0-9]{1,3})?$"
+}
+
 export {
   responseStatus,
-  currencies
+  currencies,
+  regex
 };
