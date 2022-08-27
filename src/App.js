@@ -8,7 +8,6 @@ import { GlobalStyle } from "./components/styles/globalStyle";
 import routes from "./routes/routes";
 import "./assets/fonts/default-icons/style.css";
 import "rc-tooltip/assets/bootstrap.css";
-import "rc-pagination/assets/index.css";
 
 function App() {
 
