@@ -221,139 +221,6 @@ export const GlobalStyle = createGlobalStyle`
       }
     }
   }
-
-  //AntDesign custom tabs
-  .rc-tabs-dropdown {
-    color: #c8b19b;
-    background-color: rgba(160, 150, 130, 0.15);
-    border: 1px solid #c8b19b;
-  }
-
-  .default-tabs {
-    border: none;
-    grid-gap: 20px;
-
-    .rc-tabs-nav-more {
-      display: none;
-    }
-
-    .rc-tabs-nav-list {
-      .rc-tabs-tab {
-        font-size: 14px;
-
-        &:hover {
-          opacity: 1;
-        }
-
-        .rc-tabs-tab-btn {
-          outline: none;
-        }
-      }
-
-      .rc-tabs-tab-active {
-        opacity: 1;
-      }
-
-      .rc-tabs-ink-bar {
-        background: #c8b19b;
-      }
-
-      @media screen and (max-width: 576px) {
-        display: grid;
-        grid-template-rows: auto;
-        .rc-tabs-tab {
-          margin: 0;
-          padding: 5px 15px;
-        }
-
-        .rc-tabs-ink-bar {
-          display: none;
-        }
-
-        .rc-tabs-tab-active {
-          color: #c8b19b;
-          font-weight: 700;
-          background-color: rgba(160, 150, 130, 0.15);
-          border: 1px solid #c8b19b;
-          border-radius: 5px;
-        }
-      }
-    }
-
-    .rc-tabs-content-holder {
-      .rc-tabs-tabpane {
-        outline: none;
-      }
-    }
-
-    @media screen and (max-width: 992px) {
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(2, auto);
-    }
-  }
-
-  .default-tabs-left {
-    display: grid;
-    grid-template-columns: 256px auto;
-
-    .rc-tabs-tab {
-      margin: 0;
-      padding: 5px 15px;
-    }
-
-    .rc-tabs-ink-bar {
-      display: none;
-    }
-
-    .rc-tabs-tab-active {
-      color: #c8b19b;
-      font-weight: 700;
-      background-color: rgba(160, 150, 130, 0.15);
-      border: 1px solid #c8b19b;
-      border-radius: 5px;
-    }
-
-    @media screen and (max-width: 992px) {
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-    }
-  }
-
-  .default-tabs-top {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 55px auto;
-    overflow: inherit;
-
-    .rc-tabs-nav-list {
-      width: 100%;
-      border-bottom: 1px solid #E5E5E5;
-    }
-
-    .rc-tabs-tab {
-      margin-right: 20px;
-      padding: 15px 0;
-      background: transparent;
-      opacity: 0.4;
-
-      &:last-child {
-        margin: 0;
-      }
-    }
-
-    .rc-tabs-tab-active {
-      color: #c8b19b;
-    }
-
-    .rc-tabs-nav-more {
-      min-width: 25px;
-    }
-
-    @media screen and (max-width: 576px) {
-      grid-template-columns: 100%;
-      grid-template-rows: minmax(40px, auto) auto;
-    }
-  }
   
   //AntDesign custom pagination 
   .default-pagination {
@@ -396,6 +263,77 @@ export const GlobalStyle = createGlobalStyle`
       &:hover a {
         color: #fff;
       }
+    }
+  }
+  
+  //AntDesign custom select
+  .rc-select-item-empty {
+    padding: 16px 22px;
+  }
+
+  .rc-select-selector {
+    min-height: 50px;
+
+    .rc-select-selection-overflow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      &-item {
+        display: inline-flex;
+      }
+    }
+
+    span.rc-select-selection-item, span.rc-select-selection-placeholder {
+      padding: 10px 22px;
+      display: flex;
+    }
+  }
+
+  .rc-select-dropdown {
+    border: 1px solid #152D35;
+    box-shadow: 0 1px 4px rgb(25 54 54 / 50%);
+
+    .rc-select-item-option {
+      padding: 10px 22px;
+      background: #F3F3F3;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        background: #152D35;
+      }
+
+      .option-select-item {
+        display: flex;
+        align-items: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        span {
+          padding-right: 20px;
+          font-size: 22px;
+        }
+
+        img {
+          height: 22px;
+          width: 22px;
+          margin-right: 20px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+
+    .rc-select-item-option-selected {
+      color: #fff;
+      background: #345B63;
+
+      .rc-select-item-option-state {
+        display: none;
+      }
+
     }
   }
 `;

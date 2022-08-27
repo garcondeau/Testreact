@@ -11,12 +11,12 @@ const responseStatus = {
   HTTP_CONFLICT: 409
 };
 
-const currencies = {
-  uah: "UAH",
-  eur: "EUR",
-  usd: "USD",
-  pln: "PLN"
-}
+const currencies = [
+  { value: 'uah', label: 'UAH' },
+  { value: 'usd', label: 'USD' },
+  { value: 'eur', label: 'EUR' },
+  { value: 'pln', label: 'PLN' },
+];
 
 export {
   responseStatus,
