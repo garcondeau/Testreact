@@ -8,6 +8,7 @@ import CustomSelect from "../elements/customSelect/CustomSelect";
 
 import { StyledExchangerWrapper } from "./styledExchanger";
 import { StyledButton } from "../styles/styledButton";
+import CurrenciesSwap from "./CurrenciesSwap";
 
 const Exchanger = () => {
   const [{ sellingCurrency, buyingCurrency, amount }, setExchangeDetails] = useState(
@@ -74,11 +75,8 @@ const Exchanger = () => {
   };
 
   const onChangeSelect = (value, name) => {
+    setResult(null)
     setExchangeDetails((prevState) => ({ ...prevState, [name]: value }));
-  };
-
-  const swapCurrencies = () => {
-    setExchangeDetails({ sellingCurrency: buyingCurrency, buyingCurrency: sellingCurrency });
   };
 
   const handleSubmit = formDecorator(sendExchange);
@@ -122,13 +120,12 @@ const Exchanger = () => {
             />
           </div>
         </div>
-        <div
-          className="swap-btn"
-        >
-          <button
-            onClick={swapCurrencies}
-            className="icon-swap"/>
-        </div>
+        <CurrenciesSwap
+          setExchangeDetails={setExchangeDetails}
+          sellingCurrency={sellingCurrency}
+          buyingCurrency={buyingCurrency}
+          setResult={setResult}
+        />
         <div className="exchanger__buying">
           <small>
             Buying currency
@@ -146,7 +143,7 @@ const Exchanger = () => {
               <small>
                 You get:
               </small>
-              <p>{result ? (result * amount) : "0.0"}</p>
+              <p>{result ? (result * amount) : "Submit changes first"}</p>
             </div>
           </div>
         </div>
