@@ -1,6 +1,7 @@
 import React from "react";
 import HomePage from "../pages/home/HomePage";
 import NotFoundPage from "../pages/notFoundPage/NotFoundPage";
+import RatesPage from "../pages/rates/RatesPage";
 
 const routes = [
   {
@@ -8,6 +9,12 @@ const routes = [
     path: "/",
     exact: true,
     component: HomePage,
+  },
+  {
+    title: "Rates",
+    path: "/rates",
+    exact: true,
+    component: RatesPage,
   },
   {
     title: "Not found page",

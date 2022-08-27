@@ -7,7 +7,7 @@ import { StyledMainTitle } from "../styles/styledTitle";
 
 const HomeContainer = () => {
   return (
-    <StyledHomeContainer>
+    <StyledHomeContainer wrapper="content">
       <Helmet>
         <title>Home | Currency exchanger</title>
       </Helmet>
