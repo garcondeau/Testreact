@@ -5,8 +5,9 @@ import { Switch, Redirect } from "react-router-dom";
 import LoadRoute from "./components/loadRouter/LoadRoute";
 import Header from "./components/elements/header/Header";
 import { GlobalStyle } from "./components/styles/globalStyle";
-import "./assets/fonts/default-icons/style.css"
 import routes from "./routes/routes";
+import "./assets/fonts/default-icons/style.css";
+import "rc-tooltip/assets/bootstrap.css";
 
 function App() {
 
