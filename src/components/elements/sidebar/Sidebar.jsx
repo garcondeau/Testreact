@@ -1,8 +1,9 @@
 import React from "react";
 import { ProSidebar, Menu, SidebarContent } from "react-pro-sidebar";
-import "react-pro-sidebar/dist/css/styles.css";
-import { StyledSidebarWrapper } from "./styledSidebar";
 import SidebarLinkList from "./SidebarLinkList";
+import "react-pro-sidebar/dist/css/styles.css";
+
+import { StyledSidebarWrapper } from "./styledSidebar";
 
 const Sidebar = ({ menuCollapse }) => {
 

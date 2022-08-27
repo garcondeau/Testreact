@@ -13,7 +13,7 @@ const userRoutes = [
     path: "/rates",
     perform: navbar.RATES,
     icon: "rates"
-  },
+  }
 
 ];
 

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Helmet } from "react-helmet-async";
+import RatesTable from "./RatesTable";
+import CustomSelect from "../elements/customSelect/CustomSelect";
+import { responseStatus } from "../../utils/consts";
 
 import { StyledRatesContainer, StyledRatesWrapper } from "./styledRates";
 import { StyledMainTitle } from "../styles/styledTitle";
-import RatesTable from "./RatesTable";
-import CustomSelect from "../elements/customSelect/CustomSelect";
-import axios from "axios";
-import { responseStatus } from "../../utils/consts";
 
 const RatesContainer = () => {
   const [loading, setLoading] = useState(false);
-  const [currencies, setCurrencies] = useState([]);
+  const [currencies] = useState([]);
   const [sellingCurrency, setSellingCurrency] = useState({});
 
   const fetchCurrencies = () => {
@@ -51,11 +51,13 @@ const RatesContainer = () => {
         <StyledMainTitle mb="20" size="22" position="center">
           Rates
         </StyledMainTitle>
+        <small>Select currency</small>
         <CustomSelect
+          name="sellingCurrency"
           value={sellingCurrency}
           onChange={(value) => onChangeSelect(value)}
           options={currencies}
-          placeholder="Select currency"
+          disabled={loading}
         />
         {
           sellingCurrency.value &&

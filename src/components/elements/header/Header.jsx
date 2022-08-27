@@ -3,7 +3,7 @@ import Logo from "../logo/Logo";
 import TopCurrencies from "./TopCurrencies";
 
 import { StyledHeaderContainer, StyledHeaderWrapper } from "./styledHeader";
-import Sidebar from "../Sidebar/Sidebar";
+import Sidebar from "../sidebar/Sidebar";
 
 
 const Header = () => {
